@@ -8,11 +8,4 @@ module.exports = function (eleventyConfig) {
     
     return value;
   });
-  
-  let markdownIt = require("markdown-it");
-  let options = {
-    breaks: true,
-  };
-  
-  eleventyConfig.setLibrary("md", markdownIt(options));
 };
