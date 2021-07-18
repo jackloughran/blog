@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }} | Jack Loughran's Blog</title>
+    <style>
+      body {
+        font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  </head>
+  <body>
+    <div style="max-width: 900px; margin: 0 auto;">
+      <h1>{{ title }}</h1>
+      <p style="font-style: italic">created {{ created }}
+        {% if updated %}
+          <p>updated {{ updated }}</p>
+        {% endif %}
+        {{ content | safe | unobsidian }}
+      </p>
+    </div>
+    <script async defer data-domain="jackloughran.blog" src="https://a.jackloughran.blog/a.js"></script>
+  </body>
+</html>

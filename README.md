@@ -1,1 +1,1 @@
-The source code for [my blog](https://jackloughran.blog)
+https://jackloughran.blog
